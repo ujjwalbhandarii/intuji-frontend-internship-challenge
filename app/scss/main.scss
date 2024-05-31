@@ -1,3 +1,10 @@
-.test {
-  background-color: green;
-}
+@import "base/reset";
+
+@import "abstracts/mixins";
+@import "abstracts/utilities";
+
+// layout
+@import "./layouts/header";
+
+// components
+@import "./components/buttons";

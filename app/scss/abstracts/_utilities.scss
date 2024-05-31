@@ -1,0 +1,16 @@
+.u-container {
+  padding: 0 1rem;
+
+  @include devices(headerbreakpoint) {
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+
+  @include devices(smalldisplay) {
+    max-width: 70rem;
+  }
+
+  @include devices(largedisplay) {
+    max-width: 90rem;
+  }
+}

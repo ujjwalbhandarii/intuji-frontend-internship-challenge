@@ -1,0 +1,38 @@
+$blue: #9fd4e9;
+
+.header {
+  padding: 1rem 0;
+  background-color: $blue;
+
+  @include devices(tablet) {
+    padding: 2rem 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--heading {
+    font-size: 1.4rem;
+
+    @include devices(tablet) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__links {
+    display: none;
+
+    @include devices(tablet) {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  &--link {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

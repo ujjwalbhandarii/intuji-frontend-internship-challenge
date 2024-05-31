@@ -1,0 +1,19 @@
+$PRIMARY: #4e47ba;
+
+.button {
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.9rem 2rem;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--primary {
+    background-color: $PRIMARY;
+    color: white;
+  }
+}
