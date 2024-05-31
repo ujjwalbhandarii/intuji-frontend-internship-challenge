@@ -1,12 +1,16 @@
 $PRIMARY: #4e47ba;
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   outline: none;
   font-weight: 500;
   font-size: 0.95rem;
   padding: 0.9rem 2rem;
   background-color: transparent;
+  gap: 0.5rem;
 
   &:hover {
     cursor: pointer;
@@ -15,5 +19,11 @@ $PRIMARY: #4e47ba;
   &--primary {
     background-color: $PRIMARY;
     color: white;
+  }
+
+  &--primaryrounded {
+    background-color: $PRIMARY;
+    color: white;
+    border-radius: 5rem;
   }
 }

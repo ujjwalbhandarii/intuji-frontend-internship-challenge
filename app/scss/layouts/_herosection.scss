@@ -1,0 +1,88 @@
+.herosection {
+  //   overflow: hidden;
+  background-color: $blue;
+
+  @include devices(tablet) {
+    height: 95vh;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__left {
+    flex: 1;
+    padding-top: 6rem;
+    height: fit-content;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include devices(smalldisplay) {
+      padding-top: 10rem;
+    }
+  }
+
+  &--para {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 95%;
+    color: rgba($color: #000000, $alpha: 0.8);
+  }
+
+  &--heading {
+    width: 95%;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  &--btnrounded {
+    padding: 1.2rem 2rem !important;
+    background-color: red;
+  }
+
+  &--playbutton {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+
+  &__offers {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  &__right {
+    display: none;
+
+    @include devices(tablet) {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--heroimg {
+    height: 60rem;
+    width: auto;
+    object-fit: contain;
+    // background-color: red;
+  }
+}

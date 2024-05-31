@@ -11,6 +11,18 @@
   }
 
   @include devices(largedisplay) {
+    max-width: 80rem;
+  }
+
+  @include devices(largestdisplay) {
     max-width: 90rem;
+  }
+}
+
+.u-section {
+  padding: 5rem 0;
+
+  @include devices(smalldisplay) {
+    padding: 5rem 0;
   }
 }
