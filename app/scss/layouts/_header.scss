@@ -3,6 +3,7 @@
   background-color: $blue;
   position: fixed;
   width: 100%;
+  z-index: 99;
 
   @include devices(tablet) {
     padding: 2rem 0;
