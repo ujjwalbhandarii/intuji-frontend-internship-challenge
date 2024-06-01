@@ -93,6 +93,9 @@ a {
   align-items: center;
   justify-content: center;
 }
+.header--link:hover {
+  color: #23029c;
+}
 .header__bar i {
   font-size: 1.5rem;
 }
@@ -922,13 +925,20 @@ a {
 }
 .button:hover {
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .button--primary {
   background-color: #4e47ba;
   color: white;
 }
+.button--primary:hover {
+  background-color: rgba(35, 2, 156, 0.5);
+}
 .button--primaryrounded {
   background-color: #4e47ba;
   color: white;
   border-radius: 5rem;
+}
+.button--primaryrounded:hover {
+  background-color: rgba(35, 2, 156, 0.5);
 }/*# sourceMappingURL=main.css.map */

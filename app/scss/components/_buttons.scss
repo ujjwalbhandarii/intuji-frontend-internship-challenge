@@ -14,16 +14,25 @@ $PRIMARY: #4e47ba;
 
   &:hover {
     cursor: pointer;
+    background-color: rgba($color: #ffffff, $alpha: 0.1);
   }
 
   &--primary {
     background-color: $PRIMARY;
     color: white;
+
+    &:hover {
+      background-color: rgba($color: $primary, $alpha: 0.5);
+    }
   }
 
   &--primaryrounded {
     background-color: $PRIMARY;
     color: white;
     border-radius: 5rem;
+
+    &:hover {
+      background-color: rgba($color: $primary, $alpha: 0.5);
+    }
   }
 }
