@@ -875,6 +875,9 @@ a {
   left: 25rem;
 }
 
+.footer {
+  padding: 0 1rem;
+}
 .footer__wrapper {
   display: grid;
   gap: 2rem;
