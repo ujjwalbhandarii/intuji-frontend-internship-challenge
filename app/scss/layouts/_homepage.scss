@@ -1,5 +1,6 @@
 .herosection {
   background-color: $blue;
+  position: relative;
 
   @include devices(tablet) {
     height: 85vh;
@@ -29,13 +30,13 @@
     font-size: 1.2rem;
     font-weight: 500;
     width: 95%;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   &--heading {
     width: 95%;
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 800;
   }
 
   &__buttons {
@@ -86,7 +87,30 @@
     height: 60rem;
     width: auto;
     object-fit: contain;
+    user-select: none;
     // background-color: red;
+  }
+
+  &__clip {
+    position: absolute;
+    opacity: 0.8;
+    user-select: none;
+
+    &__one {
+      top: 3rem;
+      right: 0;
+    }
+
+    &__two {
+      bottom: -10rem;
+      right: 0;
+    }
+
+    &__three {
+      bottom: 5rem;
+      left: 0;
+      rotate: 180deg;
+    }
   }
 }
 
@@ -143,7 +167,7 @@
 
   &--herotext {
     font-size: 2.5rem;
-    font-weight: 700;
+    font-weight: 800;
   }
 
   &--heropara {
@@ -254,10 +278,17 @@
   &__left {
     flex: 1.2;
     display: none;
+    position: relative;
 
     @include devices(tablet) {
       display: flex;
     }
+  }
+
+  &--clip {
+    position: absolute;
+    top: -2rem;
+    right: 15rem;
   }
 
   &__main {
@@ -614,5 +645,68 @@
       width: 100%;
       height: auto;
     }
+  }
+}
+
+.getstarted {
+  &__wrapper {
+    position: relative;
+    background-color: #3634a8;
+    padding: 8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-direction: column;
+    border-radius: 1rem;
+
+    h4 {
+      font-size: 3.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    button {
+      padding: 1.5rem 3rem;
+      background-color: peru;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 0.3rem;
+    }
+  }
+
+  &__clip {
+    position: absolute;
+    user-select: none;
+    opacity: 0.8;
+  }
+
+  &__clip__one {
+    bottom: 5rem;
+    left: 10rem;
+  }
+
+  &__clip__two {
+    top: 5rem;
+    right: 10rem;
+    rotate: 90deg;
+  }
+
+  &__clip__three {
+    bottom: 5rem;
+    right: 5rem;
+  }
+
+  &__clip__four {
+    bottom: 10rem;
+    left: 20rem;
+  }
+
+  &__clip__five {
+    top: 6rem;
+    left: 25rem;
   }
 }

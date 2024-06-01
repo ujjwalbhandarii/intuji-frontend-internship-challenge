@@ -83,12 +83,16 @@ a {
 @media only screen and (min-width: 756px) {
   .header__links {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
   }
 }
 .header--link {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 .header__buttons {
   display: flex;
@@ -97,6 +101,7 @@ a {
 
 .herosection {
   background-color: #9fd4e9;
+  position: relative;
 }
 @media only screen and (min-width: 756px) {
   .herosection {
@@ -121,12 +126,12 @@ a {
   font-size: 1.2rem;
   font-weight: 500;
   width: 95%;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .herosection--heading {
   width: 95%;
   font-size: 3.5rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 .herosection__buttons {
   display: flex;
@@ -171,6 +176,29 @@ a {
   width: auto;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.herosection__clip {
+  position: absolute;
+  opacity: 0.8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.herosection__clip__one {
+  top: 3rem;
+  right: 0;
+}
+.herosection__clip__two {
+  bottom: -10rem;
+  right: 0;
+}
+.herosection__clip__three {
+  bottom: 5rem;
+  left: 0;
+  rotate: 180deg;
 }
 
 .partners {
@@ -222,7 +250,7 @@ a {
 }
 .offers--herotext {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 .offers--heropara {
   font-size: 1.1rem;
@@ -323,11 +351,17 @@ a {
 .trackpayments__left {
   flex: 1.2;
   display: none;
+  position: relative;
 }
 @media only screen and (min-width: 756px) {
   .trackpayments__left {
     display: flex;
   }
+}
+.trackpayments--clip {
+  position: absolute;
+  top: -2rem;
+  right: 15rem;
 }
 .trackpayments__main {
   flex: 0.8;
@@ -632,17 +666,72 @@ a {
   height: auto;
 }
 
+.getstarted__wrapper {
+  position: relative;
+  background-color: #3634a8;
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+.getstarted__wrapper h4 {
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+}
+.getstarted__wrapper button {
+  padding: 1.5rem 3rem;
+  background-color: peru;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+}
+.getstarted__clip {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  opacity: 0.8;
+}
+.getstarted__clip__one {
+  bottom: 5rem;
+  left: 10rem;
+}
+.getstarted__clip__two {
+  top: 5rem;
+  right: 10rem;
+  rotate: 90deg;
+}
+.getstarted__clip__three {
+  bottom: 5rem;
+  right: 5rem;
+}
+.getstarted__clip__four {
+  bottom: 10rem;
+  left: 20rem;
+}
+.getstarted__clip__five {
+  top: 6rem;
+  left: 25rem;
+}
+
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   outline: none;
-  font-weight: 500;
   font-size: 0.95rem;
   padding: 0.9rem 2rem;
   background-color: transparent;
   gap: 0.5rem;
+  font-weight: 600;
 }
 .button:hover {
   cursor: pointer;
