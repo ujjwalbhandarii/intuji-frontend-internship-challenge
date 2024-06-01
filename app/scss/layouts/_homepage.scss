@@ -205,7 +205,8 @@
     justify-content: center;
     background-color: rgba(grey, $alpha: 0.1);
     background-color: white;
-    padding: 6rem 4rem;
+    padding: 4rem;
+    padding-top: 7rem;
 
     gap: 1.5rem;
     text-align: center;
@@ -237,6 +238,191 @@
       opacity: 0.6;
       font-weight: 500;
       line-height: 1.8rem;
+    }
+  }
+}
+
+.trackpayments {
+  background-color: #fcfcff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    flex: 1.2;
+    display: none;
+
+    @include devices(tablet) {
+      display: flex;
+    }
+  }
+
+  &__main {
+    flex: 0.8;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    span {
+      color: rgb(2, 2, 165);
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    h4 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+  }
+
+  hr {
+    margin: 1rem 0;
+    height: 3px;
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__guidance {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.whyus {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @include devices(tablet) {
+      gap: 5rem;
+      flex-direction: row;
+    }
+  }
+
+  &__left {
+    flex: 1;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+
+    span {
+      color: rgb(2, 2, 165);
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    h4 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      opacity: 0.6;
+    }
+  }
+
+  &__testimonial {
+    margin: 2rem 0;
+  }
+
+  &--author {
+    font-size: 1.05rem !important;
+    font-weight: 600;
+  }
+
+  &__right {
+    flex: 1;
+  }
+}
+
+.feature {
+  background-color: $blue;
+
+  &__wrapper {
+    h4 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+
+      @include devices(tablet) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.6;
+
+      @include devices(tablet) {
+        width: 30rem;
+      }
+    }
+  }
+
+  &__main {
+    margin-bottom: 4rem;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    gap: 2rem;
+
+    @include devices(smalldisplay) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
+    &__box {
+      padding: 4rem 2rem;
+      background-color: white;
+      border-radius: 0.4rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+
+      h4 {
+        font-size: 1.6rem;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-size: 1rem;
+        opacity: 0.6;
+        width: 100%;
+      }
+    }
+
+    &__span {
+      @include devices(tablet) {
+        grid-column: 3/4;
+      }
+    }
+
+    &__normal {
+      @include devices(tablet) {
+        grid-row: span 2;
+      }
     }
   }
 }
