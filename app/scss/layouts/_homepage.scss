@@ -2,7 +2,7 @@
   background-color: $blue;
 
   @include devices(tablet) {
-    height: 95vh;
+    height: 85vh;
     overflow: hidden;
   }
 
@@ -12,7 +12,7 @@
 
   &__left {
     flex: 1;
-    padding-top: 6rem;
+    padding-top: 2rem;
     height: fit-content;
 
     display: flex;
@@ -21,7 +21,7 @@
     gap: 2rem;
 
     @include devices(smalldisplay) {
-      padding-top: 10rem;
+      // padding-top: 10rem;
     }
   }
 
@@ -423,6 +423,196 @@
       @include devices(tablet) {
         grid-row: span 2;
       }
+    }
+  }
+}
+
+.testimonials {
+  // background-color: green;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &--fill {
+    position: absolute;
+    top: 3rem;
+    right: 10rem;
+    height: 6rem;
+    width: auto;
+  }
+
+  &__main {
+    margin-bottom: 4rem;
+
+    h4 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+
+      @include devices(tablet) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.6;
+
+      @include devices(tablet) {
+        width: 35rem;
+      }
+    }
+  }
+
+  &__group {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__testimonial {
+    display: flex;
+    padding: 2rem;
+    position: relative;
+    background-color: rgba(grey, $alpha: 0.1);
+    border-radius: 0.5rem;
+
+    &--figure {
+      position: absolute;
+      top: -1rem;
+      left: 2rem;
+    }
+
+    &__main {
+      display: flex;
+    }
+
+    &__content {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.metrics {
+  background-color: #222085;
+  position: relative;
+
+  &--icon {
+    position: absolute;
+    right: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+
+    p {
+      font-size: 1.2rem;
+      width: 13rem;
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    font-size: 1.3rem;
+
+    h4 {
+      font-size: 4rem;
+    }
+
+    img {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.vl {
+  border-left: 3px solid white;
+  height: 8rem;
+}
+
+.recentblogs {
+  &--heading {
+    margin-bottom: 3rem;
+  }
+
+  &__blog {
+    background-color: rgba(grey, $alpha: 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+      gap: 1rem;
+
+      span {
+        text-transform: uppercase;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        width: 25rem;
+      }
+    }
+  }
+
+  &__blog2 {
+    background-color: rgba(grey, $alpha: 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    width: 100%;
+    border-radius: 0.3rem;
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem;
+      padding-bottom: 2rem;
+      gap: 1rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      span {
+        text-transform: uppercase;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__group2 {
+    gap: 2rem;
+    display: grid;
+
+    @include devices(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }
