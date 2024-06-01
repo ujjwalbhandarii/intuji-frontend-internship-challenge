@@ -904,6 +904,8 @@ a {
 .footer2 {
   padding: 2rem 0;
   text-align: center;
+  font-size: 0.88rem;
+  font-weight: 600;
 }
 
 .button {
