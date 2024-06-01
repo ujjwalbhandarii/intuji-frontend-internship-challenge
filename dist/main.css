@@ -56,8 +56,6 @@ a {
 .header {
   padding: 1rem 0;
   background-color: #9fd4e9;
-  width: 100%;
-  z-index: 99;
 }
 @media only screen and (min-width: 756px) {
   .header {
@@ -94,9 +92,22 @@ a {
   align-items: center;
   justify-content: center;
 }
+.header__bar i {
+  font-size: 1.5rem;
+}
+@media only screen and (min-width: 756px) {
+  .header__bar {
+    display: none;
+  }
+}
 .header__buttons {
-  display: flex;
+  display: none;
   gap: 1rem;
+}
+@media only screen and (min-width: 756px) {
+  .header__buttons {
+    display: flex;
+  }
 }
 
 .herosection {

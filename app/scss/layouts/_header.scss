@@ -1,9 +1,9 @@
 .header {
   padding: 1rem 0;
   background-color: $blue;
+  // width: 100%;
   // position: fixed;
-  width: 100%;
-  z-index: 99;
+  // z-index: 99;
 
   @include devices(tablet) {
     padding: 2rem 0;
@@ -41,8 +41,22 @@
     justify-content: center;
   }
 
+  &__bar {
+    i {
+      font-size: 1.5rem;
+    }
+
+    @include devices(tablet) {
+      display: none;
+    }
+  }
+
   &__buttons {
-    display: flex;
+    display: none;
     gap: 1rem;
+
+    @include devices(tablet) {
+      display: flex;
+    }
   }
 }
