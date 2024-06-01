@@ -113,6 +113,7 @@ a {
 .herosection {
   background-color: #9fd4e9;
   position: relative;
+  overflow: hidden;
 }
 @media only screen and (min-width: 756px) {
   .herosection {
@@ -125,7 +126,6 @@ a {
 }
 .herosection__left {
   flex: 1;
-  padding-top: 2rem;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
@@ -133,29 +133,54 @@ a {
   flex-direction: column;
   gap: 2rem;
 }
+@media only screen and (min-width: 756px) {
+  .herosection__left {
+    padding-top: 2rem;
+  }
+}
 .herosection--para {
   font-size: 1.2rem;
+  font-size: clamp(0.9rem, 0.5rem + 2vw, 1.2rem);
   font-weight: 500;
   width: 95%;
   opacity: 0.6;
 }
 .herosection--heading {
   width: 95%;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
   font-weight: 800;
 }
 .herosection__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 1rem;
+  width: 100%;
+}
+@media only screen and (min-width: 756px) {
+  .herosection__buttons {
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-direction: row;
+  }
 }
 .herosection--btnrounded {
   padding: 1.2rem 2rem !important;
   background-color: red;
 }
+@media only screen and (max-width: 756px) {
+  .herosection--btnrounded {
+    width: 100%;
+  }
+}
 .herosection--btnghost {
   padding: 1rem;
+}
+@media only screen and (max-width: 756px) {
+  .herosection--btnghost {
+    width: 100%;
+  }
 }
 .herosection--playbutton {
   height: 3.5rem;
@@ -201,15 +226,33 @@ a {
 .herosection__clip__one {
   top: 3rem;
   right: 0;
+  display: none;
+}
+@media only screen and (min-width: 756px) {
+  .herosection__clip__one {
+    display: block;
+  }
 }
 .herosection__clip__two {
-  bottom: -10rem;
-  right: 0;
+  bottom: -13rem;
+  right: -1rem;
+}
+@media only screen and (min-width: 756px) {
+  .herosection__clip__two {
+    bottom: -10rem;
+    right: 0;
+  }
 }
 .herosection__clip__three {
   bottom: 5rem;
   left: 0;
   rotate: 180deg;
+  display: none;
+}
+@media only screen and (min-width: 756px) {
+  .herosection__clip__three {
+    display: block;
+  }
 }
 
 .partners {
@@ -222,6 +265,7 @@ a {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 1.7rem;
+  font-size: clamp(1.4rem, 0.5rem + 2vw, 1.7rem);
   font-weight: 600;
 }
 .partners__group {
@@ -261,10 +305,12 @@ a {
 }
 .offers--herotext {
   font-size: 2.5rem;
+  font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
   font-weight: 800;
 }
 .offers--heropara {
   font-size: 1.1rem;
+  font-size: clamp(1rem, 0.5rem + 2vw, 1.1rem);
   font-weight: 400;
 }
 @media only screen and (min-width: 756px) {
@@ -320,13 +366,18 @@ a {
   justify-content: center;
   background-color: rgba(128, 128, 128, 0.1);
   background-color: white;
-  padding: 4rem;
-  padding-top: 7rem;
+  padding: 2rem;
   gap: 1.5rem;
   text-align: center;
   border-radius: 0.6rem;
   position: relative;
   border: 2px solid rgba(179, 176, 176, 0.2);
+}
+@media only screen and (min-width: 756px) {
+  .offers__offer {
+    padding: 4rem;
+    padding-top: 7rem;
+  }
 }
 .offers__offer span {
   position: absolute;
@@ -387,7 +438,7 @@ a {
   font-weight: 500;
 }
 .trackpayments__main h4 {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
   margin-bottom: 0.5rem;
 }
 .trackpayments__main p {
@@ -435,7 +486,7 @@ a {
   font-weight: 500;
 }
 .whyus__left h4 {
-  font-size: 2.8rem;
+  font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
   margin-bottom: 0.5rem;
 }
 .whyus__left p {
@@ -452,12 +503,21 @@ a {
 .whyus__right {
   flex: 1;
 }
+.whyus__right img {
+  width: 100%;
+}
+@media only screen and (min-width: 756px) {
+  .whyus__right img {
+    width: auto;
+  }
+}
 
 .feature {
   background-color: #9fd4e9;
 }
 .feature__wrapper h4 {
   font-size: 4rem;
+  font-size: clamp(2.8rem, 0.5rem + 2vw, 4rem);
   margin-bottom: 0.5rem;
 }
 @media only screen and (min-width: 756px) {
@@ -526,12 +586,18 @@ a {
   right: 10rem;
   height: 6rem;
   width: auto;
+  display: none;
+}
+@media only screen and (min-width: 756px) {
+  .testimonials--fill {
+    display: block;
+  }
 }
 .testimonials__main {
   margin-bottom: 4rem;
 }
 .testimonials__main h4 {
-  font-size: 4rem;
+  font-size: clamp(2.8rem, 0.5rem + 2vw, 4rem);
   margin-bottom: 0.5rem;
 }
 @media only screen and (min-width: 756px) {
@@ -551,6 +617,12 @@ a {
 .testimonials__group {
   display: flex;
   gap: 2rem;
+  flex-direction: column;
+}
+@media only screen and (min-width: 756px) {
+  .testimonials__group {
+    flex-direction: row;
+  }
 }
 .testimonials__testimonial {
   display: flex;
@@ -588,10 +660,18 @@ a {
   justify-content: space-around;
   flex-direction: row;
   color: white;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media only screen and (min-width: 756px) {
+  .metrics__wrapper {
+    flex-direction: row;
+  }
 }
 .metrics__wrapper p {
   font-size: 1.2rem;
   width: 13rem;
+  text-align: center;
 }
 .metrics__data {
   display: flex;
@@ -609,6 +689,12 @@ a {
 .vl {
   border-left: 3px solid white;
   height: 8rem;
+  display: none;
+}
+@media only screen and (min-width: 756px) {
+  .vl {
+    display: block;
+  }
 }
 
 .recentblogs--heading {
@@ -686,10 +772,14 @@ a {
   justify-content: center;
   gap: 2rem;
   flex-direction: column;
-  border-radius: 1rem;
+}
+@media only screen and (min-width: 756px) {
+  .getstarted__wrapper {
+    border-radius: 1rem;
+  }
 }
 .getstarted__wrapper h4 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 0.5rem + 2vw, 4rem);
   text-align: center;
   color: white;
 }
@@ -709,6 +799,12 @@ a {
      -moz-user-select: none;
           user-select: none;
   opacity: 0.8;
+  display: none;
+}
+@media only screen and (min-width: 756px) {
+  .getstarted__clip {
+    display: block;
+  }
 }
 .getstarted__clip__one {
   bottom: 5rem;
