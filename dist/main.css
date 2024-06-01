@@ -69,6 +69,7 @@ a {
 }
 .header--heading {
   font-size: 1.4rem;
+  font-weight: 800;
 }
 @media only screen and (min-width: 756px) {
   .header--heading {
