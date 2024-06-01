@@ -305,7 +305,7 @@ a {
 }
 .offers--herotext {
   font-size: 2.5rem;
-  font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
+  font-size: clamp(2rem, 0.5rem + 2vw, 3.5rem);
   font-weight: 800;
 }
 .offers--heropara {
@@ -438,7 +438,7 @@ a {
   font-weight: 500;
 }
 .trackpayments__main h4 {
-  font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
+  font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
   margin-bottom: 0.5rem;
 }
 .trackpayments__main p {
@@ -486,7 +486,7 @@ a {
   font-weight: 500;
 }
 .whyus__left h4 {
-  font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
+  font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
   margin-bottom: 0.5rem;
 }
 .whyus__left p {
@@ -597,7 +597,7 @@ a {
   margin-bottom: 4rem;
 }
 .testimonials__main h4 {
-  font-size: clamp(2.8rem, 0.5rem + 2vw, 4rem);
+  font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
   margin-bottom: 0.5rem;
 }
 @media only screen and (min-width: 756px) {
@@ -698,6 +698,7 @@ a {
 }
 
 .recentblogs--heading {
+  font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
   margin-bottom: 3rem;
 }
 .recentblogs__blog {

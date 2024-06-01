@@ -197,7 +197,7 @@
 
   &--herotext {
     font-size: 2.5rem;
-    font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
+    font-size: clamp(2rem, 0.5rem + 2vw, 3.5rem);
     font-weight: 800;
   }
 
@@ -340,7 +340,7 @@
     }
 
     h4 {
-      font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
+      font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
       margin-bottom: 0.5rem;
     }
 
@@ -396,8 +396,7 @@
     }
 
     h4 {
-      font-size: clamp(2rem, 0.5rem + 2vw, 2.5rem);
-
+      font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
       margin-bottom: 0.5rem;
     }
 
@@ -527,7 +526,7 @@
     margin-bottom: 4rem;
 
     h4 {
-      font-size: clamp(2.8rem, 0.5rem + 2vw, 4rem);
+      font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
       margin-bottom: 0.5rem;
 
       @include devices(tablet) {
@@ -638,6 +637,7 @@
 
 .recentblogs {
   &--heading {
+    font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
     margin-bottom: 3rem;
   }
 
