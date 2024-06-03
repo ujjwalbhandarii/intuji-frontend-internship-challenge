@@ -28,5 +28,7 @@
 }
 
 .u-section-heading {
-  font-size: 4rem;
+  font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
+  border-radius: 0.3rem;
+  font-weight: 900;
 }

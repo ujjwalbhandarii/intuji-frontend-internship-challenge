@@ -79,7 +79,9 @@ a {
 }
 
 .u-section-heading {
-  font-size: 4rem;
+  font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
+  border-radius: 0.3rem;
+  font-weight: 900;
 }
 
 .header {
@@ -808,6 +810,94 @@ a {
 .recentblogs__group2 img {
   width: 100%;
   height: auto;
+}
+
+.faqs {
+  background-color: #f4f6f9;
+}
+.faqs--heading {
+  margin-bottom: 2.5rem;
+}
+.faqs__main {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media only screen and (min-width: 756px) {
+  .faqs__main {
+    flex-direction: row;
+  }
+}
+.faqs__left {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.faqs__faq {
+  background-color: white;
+  border: 2px solid rgba(134, 134, 134, 0.2);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.faqs__faq__main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.faqs__faq__main h5 {
+  font-size: clamp(1.2rem, 0.5rem + 0.5vw, 1.4rem) !important;
+}
+.faqs__faq__main p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.faqs__faq i {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+.faqs__right {
+  flex: 0.6;
+  padding: 2rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid rgba(134, 134, 134, 0.2);
+  border-radius: 0.5rem;
+}
+.faqs__right__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.faqs__right__top h5 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.faqs__right__top p {
+  width: 85%;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.faqs__right__bottom {
+  width: 100%;
+}
+.faqs__right--button {
+  background-color: #f37702 !important;
+  color: white;
+  width: 100% !important;
 }
 
 .getstarted__wrapper {
