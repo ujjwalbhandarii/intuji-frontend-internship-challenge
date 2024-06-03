@@ -182,7 +182,7 @@ a {
 .herosection--heading {
   width: 95%;
   font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
-  font-weight: 800;
+  font-weight: 900;
 }
 .herosection__buttons {
   display: flex;
@@ -300,7 +300,7 @@ a {
   margin-bottom: 2.5rem;
   font-size: 1.7rem;
   font-size: clamp(1.4rem, 0.5rem + 2vw, 1.7rem);
-  font-weight: 600;
+  font-weight: 700;
 }
 .partners__group {
   display: flex;
@@ -340,12 +340,12 @@ a {
 .offers--herotext {
   font-size: 2.5rem;
   font-size: clamp(2rem, 0.5rem + 2vw, 3.5rem);
-  font-weight: 800;
+  font-weight: 900;
 }
 .offers--heropara {
   font-size: 1.1rem;
   font-size: clamp(1rem, 0.5rem + 2vw, 1.1rem);
-  font-weight: 400;
+  font-weight: 500;
 }
 @media only screen and (min-width: 756px) {
   .offers--heropara {
@@ -373,11 +373,11 @@ a {
 }
 .offers--testimonial {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 .offers--author {
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 .offers__group {
   display: grid;
@@ -427,12 +427,12 @@ a {
 }
 .offers__offer h4 {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 .offers__offer p {
   font-size: 1rem;
-  opacity: 0.6;
-  font-weight: 500;
+  opacity: 0.7;
+  font-weight: 600;
   line-height: 1.8rem;
 }
 
@@ -469,15 +469,17 @@ a {
   color: rgb(2, 2, 165);
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 .trackpayments__main h4 {
   font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
   margin-bottom: 0.5rem;
+  font-weight: 900;
 }
 .trackpayments__main p {
   font-size: 1rem;
-  opacity: 0.6;
+  opacity: 0.7;
+  font-weight: 500;
 }
 .trackpayments hr {
   margin: 1rem 0;
@@ -493,6 +495,8 @@ a {
 .trackpayments__guidance {
   display: flex;
   gap: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .whyus {
@@ -520,15 +524,17 @@ a {
   color: rgb(2, 2, 165);
   text-transform: uppercase;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 800;
 }
 .whyus__left h4 {
   font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
   margin-bottom: 0.5rem;
+  font-weight: 900;
 }
 .whyus__left p {
   font-size: 1rem;
-  opacity: 0.6;
+  opacity: 0.7;
+  font-weight: 500;
 }
 .whyus__testimonial {
   margin: 2rem 0;
@@ -748,6 +754,7 @@ a {
 .recentblogs--heading {
   font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
   margin-bottom: 3rem;
+  font-weight: 900;
 }
 .recentblogs__blog {
   background-color: rgba(128, 128, 128, 0.1);
@@ -817,6 +824,7 @@ a {
 }
 .faqs--heading {
   margin-bottom: 2.5rem;
+  font-weight: 900;
 }
 .faqs__main {
   display: flex;
@@ -887,7 +895,7 @@ a {
 .faqs__right__top p {
   width: 85%;
   line-height: 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 500;
   opacity: 0.9;
 }

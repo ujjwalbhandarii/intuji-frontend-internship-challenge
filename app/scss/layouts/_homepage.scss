@@ -35,7 +35,7 @@
   &--heading {
     width: 95%;
     font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
-    font-weight: 800;
+    font-weight: 900;
   }
 
   &__buttons {
@@ -154,7 +154,7 @@
     margin-bottom: 2.5rem;
     font-size: 1.7rem;
     font-size: clamp(1.4rem, 0.5rem + 2vw, 1.7rem);
-    font-weight: 600;
+    font-weight: 700;
   }
 
   &__group {
@@ -197,13 +197,13 @@
   &--herotext {
     font-size: 2.5rem;
     font-size: clamp(2rem, 0.5rem + 2vw, 3.5rem);
-    font-weight: 800;
+    font-weight: 900;
   }
 
   &--heropara {
     font-size: 1.1rem;
     font-size: clamp(1rem, 0.5rem + 2vw, 1.1rem);
-    font-weight: 400;
+    font-weight: 500;
 
     @include devices(tablet) {
       width: 70%;
@@ -232,12 +232,12 @@
 
   &--testimonial {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   &--author {
     font-size: 1.05rem;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   &__group {
@@ -288,13 +288,13 @@
 
     h4 {
       font-size: 1.6rem;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     p {
       font-size: 1rem;
-      opacity: 0.6;
-      font-weight: 500;
+      opacity: 0.7;
+      font-weight: 600;
       line-height: 1.8rem;
     }
   }
@@ -335,17 +335,19 @@
       color: rgb(2, 2, 165);
       text-transform: uppercase;
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 800;
     }
 
     h4 {
       font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
       margin-bottom: 0.5rem;
+      font-weight: 900;
     }
 
     p {
       font-size: 1rem;
-      opacity: 0.6;
+      opacity: 0.7;
+      font-weight: 500;
     }
   }
 
@@ -365,6 +367,8 @@
   &__guidance {
     display: flex;
     gap: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
   }
 }
 
@@ -393,17 +397,19 @@
       color: rgb(2, 2, 165);
       text-transform: uppercase;
       font-size: 1rem;
-      font-weight: 600;
+      font-weight: 800;
     }
 
     h4 {
       font-size: clamp(2rem, 0.5rem + 2vw, 3rem);
       margin-bottom: 0.5rem;
+      font-weight: 900;
     }
 
     p {
       font-size: 1rem;
-      opacity: 0.6;
+      opacity: 0.7;
+      font-weight: 500;
     }
   }
 
@@ -650,6 +656,7 @@
   &--heading {
     font-size: clamp(2.8rem, 1.5rem + 2vw, 4rem);
     margin-bottom: 3rem;
+    font-weight: 900;
   }
 
   &__blog {
@@ -731,6 +738,7 @@
 
   &--heading {
     margin-bottom: 2.5rem;
+    font-weight: 900;
   }
 
   &__main {
@@ -811,7 +819,7 @@
       p {
         width: 85%;
         line-height: 2rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: 500;
         opacity: 0.9;
       }
